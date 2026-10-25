@@ -11,4 +11,6 @@ table{border-collapse:collapse;width:100%;font-size:14px;margin:8px 0}td,th{bord
 .card:nth-child(-n+3) .rank{background:#f0b90b;color:#1a1a1a}.body{flex:1;min-width:0}.handle{font-weight:700;color:#111}
 .sum{margin:4px 0 6px;font-size:15px}.meta{display:flex;justify-content:space-between;font-size:13px;color:#777}.meta a{word-break:normal;font-weight:600}
 h3.sec{margin:22px 0 4px;border-left:4px solid #f0b90b;padding-left:8px}.site-nav a.on{font-weight:700;border-bottom:2px solid #f0b90b}
+.charts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:10px 0}.chart img{width:100%;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,.25);display:block;transition:transform .15s}.chart:hover img{transform:scale(1.01)}
+@media(max-width:640px){.charts{grid-template-columns:1fr}}
 @media(max-width:520px){body{padding:10px}.hero h2{font-size:19px}.sum{font-size:14px}}
