@@ -1,43 +1,46 @@
 <!doctype html><html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>每日安全提醒 2026-10-25</title><link rel="stylesheet" href="../style.css"></head><body>
+<title>每日安全提醒 2026-10-26</title><link rel="stylesheet" href="../style.css"></head><body>
 <header><h1>BITWU 每日安全提醒</h1><nav class="site-nav"><a href="../index.html">📊 研究看板</a><a href="../hot/index.html">🔥 每日热帖榜</a><a href="../security/index.html" class="on">🛡️ 每日安全提醒</a><a href="../archive.html">研究归档</a><a href="../hot/index.html#archive">热帖榜往期</a></nav></header>
 <p class="note">本站只整理公开数据与公开帖子，不含任何个人信息，不构成投资建议。时间均为北京时间；ETF 等数据可能后补修订，以来源为准。</p>
-<div class="hot"><div class="hero"><h2>每日安全提醒 · 2026-10-25</h2><div class="win">行业风险等级：中 ｜ 窗口：2026-10-24 18:10 至 2026-10-25 18:19（北京时间）</div><p>主流交易所未见被盗、暂停提现或储备争议的公开消息；当日重点是 Electrum 钱包漏洞已致用户丢币、Keystone 官网客户资料泄露，以及 X100 治理被闪电贷接管。</p><p>只整理公开安全事件；区分传言、当事方声明和独立确认，【不确定】为未核实信息。未发现问题不代表绝对安全。不构成投资建议。</p></div><h3>1. Electrum 比特币钱包紧急修复 4.8.3</h3>
+<div class="hot"><div class="hero"><h2>每日安全提醒 · 2026-10-26</h2><div class="win">行业风险等级：中 ｜ 窗口：2026-10-25 18:19 至 2026-10-26 18:20（北京时间）</div><p>主流交易所未见被盗、暂停提现或储备争议的公开消息；当日重点是 BloomTrading 交易机器人用户被盗约 95 万美元，以及 Passport 硬件钱包开发商官方域名被冒用发送钓鱼邮件。</p><p>只整理公开安全事件；区分传言、当事方声明和独立确认，【不确定】为未核实信息。未发现问题不代表绝对安全。不构成投资建议。</p></div><h3>1. BloomTrading（Solana 交易机器人）用户钱包被盗</h3>
 <ul>
-<li>发生了什么：旧版本中，恶意服务器可扣住用户刚广播的交易，替换成收款信息末 4 位相同的假交易；用户点&quot;加速（RBF）&quot;时签下的是攻击者那笔。4.8.3 之前所有版本受影响。</li>
-<li>金额：据 X 新闻汇总，已有用户确认丢币，具体金额无数据。可信度：项目方公告，经转述，原帖未直接核对【不确定】。</li>
-<li>来源：<a href="https://x.com/i/trending/2114153700604420321" rel="noopener">X 新闻汇总</a> · <a href="https://x.com/bnb_1688/status/2114164710522474645" rel="noopener">中文转述</a></li>
+<li>据链上监测机构 Onchain Lens，一个疑似盗币钱包已收到 49 名受害者的 9,408 枚 SOL，约 95.4 万美元，最大单笔 1,636 SOL（约 16.6 万美元），最终损失可能更高。</li>
+<li>状态：Bloom 称正在调查、其他钱包安全，已临时暂停部分服务。另据 X 新闻汇总，Bloom 将原因归于第三方模块的远程代码执行漏洞并承诺全额赔付【汇总转述，未读到官方原帖】。</li>
+<li>可信度：链上监测 + 当事方声明。</li>
+<li>来源：<a href="https://x.com/wublockchain12/status/2114580094727631127" rel="noopener">吴说</a> · <a href="https://x.com/i/trending/2114561973073347041" rel="noopener">X 新闻汇总</a></li>
 </ul>
-<h3>2. Keystone 硬件钱包官网客户资料泄露</h3>
+<h3>2. Passport 硬件钱包开发商 Foundation 官方域名被冒用发送钓鱼邮件</h3>
 <ul>
-<li>10-20 发现官网被未授权访问，10-23 确认第三方经 Shopify API 获取了客户姓名、联系方式、收货信息和订单详情。官方称不涉及银行卡、助记词、私钥和钱包密码，并提醒警惕假客服、假&quot;换新设备&quot;。</li>
-<li>金额：不涉及资金，受影响人数无数据。可信度：当事方确认。</li>
-<li>来源：<a href="https://x.com/wublockchain12/status/2114082879533904269" rel="noopener">吴说</a></li>
+<li>初步调查显示源于一个或多个 Cloudflare API 密钥泄露。Foundation 已撤销所有相关密钥并关闭恶意域名，称 Passport 硬件钱包未被入侵，调查仍在进行。</li>
+<li>金额：无数据。可信度：当事方声明。</li>
+<li>来源：<a href="https://x.com/wublockchain12/status/2114589877753057289" rel="noopener">吴说</a></li>
+<li>补充：X 新闻汇总称，2026 年已有多个硬件钱包品牌的官网、电商或邮件等周边系统出问题【汇总说法，未逐一核实】，共同点是周边系统被攻破，而非设备本身。</li>
 </ul>
-<h3>3. X100（以太坊）治理被闪电贷接管，约 475 万 USDT 被转走</h3>
+<h3>3. 一则&quot;某主流 DEX 聚合器被利用&quot;的单方指控</h3>
 <ul>
-<li>安全公司 ExVul 称，攻击者 10-24 22:11（北京时间）用闪电贷在一笔交易中接管 X100 的 Senate 治理，转走 361,800 枚 X，变现约 475 万 USDT 后换成 ETH 分散。</li>
-<li>可信度：单家安全公司分析，未查到项目方回应【不确定】。</li>
-<li>来源：<a href="https://x.com/exvulsec/status/2114032078996332573" rel="noopener">ExVul</a></li>
+<li>10-26 下午，一名低粉丝 X 用户称其链上资产经某主流交易所旗下 DEX 聚合器被转走，并在多个官方账号下刷屏。其提供的交易链接无法在以太坊主网查到；窗口内未见安全机构或平台官方确认。</li>
+<li>可信度：单方指控，未核实【不确定】。可能是个人授权或私钥问题，也可能是真实漏洞，目前无法判断。</li>
+<li>来源：<a href="https://x.com/NKenV37/status/2114617665574916249" rel="noopener">原帖</a></li>
 </ul>
 <h3>其他值得留意</h3>
 <ul>
-<li>CoinDCX 跟进：据安全公司 Salus，Tether 已冻结 9 个相关钱包约 221 万 USDT。有说法称 CoinDCX 已承认约 1,599 万 USDT 损失并自行承担，未找到官方原帖【不确定】。<a href="https://x.com/PANewsCN/status/2114247509031977192" rel="noopener">PANews</a></li>
-<li>RugWhales&quot;盗币即服务&quot;：暗网情报机构称其正招募测试用户，宣称可凭助记词自动转走多条链资产，并伪装成常见钱包。无损失数据。<a href="https://x.com/wublockchain12/status/2114138826205798676" rel="noopener">吴说</a></li>
-<li>Yapeswap 治理漏洞损失约 2.19 万美元。<a href="https://x.com/SlowMist_Team/status/2114290073546219799" rel="noopener">SlowMist</a></li>
-<li>旧事件：Initia 仍停机、Swell 仍暂停 swETH / rswETH 存取，窗口内无新官方结论；Ledger/CryptoBilis 无新调查结论。</li>
-<li>稳定币：CoinGecko 单点报价 USDT 0.9991、USDC 0.9996、FDUSD 0.9971、USDe 0.9996、DAI 1.0000，未见脱锚报道。</li>
+<li>Initia 后续：Upbit 10-26 起将 INIT 列为交易警示资产，Bithumb 同日列为警示并暂停 INIT 充提，理由是安全事件原因未查明或未解决。<a href="https://x.com/wublockchain12/status/2114589280379302187" rel="noopener">吴说</a></li>
+<li>CoinDCX 收尾：据 X 新闻汇总，CoinDCX 已确认 40 个旧 TRON 充值钱包损失 15.99M USDT，原因是自动归集失效，用户充值堆积在 2025 年 7 月被黑的旧钱包中；平台自担损失并已为用户入账，Tether 冻结约 13.8%【汇总转述，官方原帖未直接核对】。<a href="https://x.com/i/trending/2114416610823831643" rel="noopener">X 新闻汇总</a></li>
+<li>&quot;解封账户、追回被盗资产&quot;类广告仍在流行，属典型二次诈骗。</li>
+<li>非加密但相关：Tailscale 被披露 11 个未修补漏洞，官方正在调查；PHP2Shell 漏洞已被实战攻破，补丁版本为 PHP 8.2.35 / 8.3.36 / 8.4.27 / 8.5.12。<a href="https://x.com/i/trending/2114492685226500116" rel="noopener">Tailscale</a> · <a href="https://x.com/i/trending/2114370981464793383" rel="noopener">PHP</a></li>
+<li>稳定币：CoinGecko 单点报价 USDT 0.9992、USDC 0.9997、FDUSD 0.9970、USDe 0.9993、DAI 1.0000，未见脱锚报道。</li>
 </ul>
 <h3>可能受影响的人群</h3>
 <ul>
-<li>使用 Electrum 4.8.3 以前版本、连接公共服务器的比特币用户，尤其常用&quot;加速&quot;功能的人。</li>
-<li>Keystone 官网下单客户，可能收到精准钓鱼邮件、短信或假&quot;换新&quot;快递。</li>
-<li>X100 持仓者；swETH、rswETH 持有人和 Initia 生态用户。</li>
+<li>使用 BloomTrading 机器人、由其托管或代为签名的 Solana 交易者。</li>
+<li>Foundation / Passport 的客户和邮件订阅者。</li>
+<li>INIT 持有人（部分韩国交易所充提受限）。</li>
+<li>在 DEX 聚合器上留有长期无限授权的用户。</li>
 </ul>
 <h3>通用防护建议</h3>
 <ul>
-<li>Electrum 用户尽快从官网升级到 4.8.3；转账和&quot;加速&quot;前核对完整收款信息，不只看末几位。</li>
-<li>收到&quot;设备召回、换新、验证助记词&quot;之类的邮件、短信或快递，一律视为诈骗；官方不会索要助记词。</li>
-<li>钱包 App 和浏览器插件只从官网安装；助记词不进入任何联网设备。</li>
-<li>定期清理不再使用的无限授权和 NFT 全量授权。</li>
-</ul></div><div class="hot"><h3 class="sec" id="archive">往期安全提醒</h3><ul><li><a href="2026-10-25/index.html">2026-10-25（风险：中）</a></li><li><a href="2026-10-24/index.html">2026-10-24（风险：中）</a></li><li><a href="2026-10-23/index.html">2026-10-23（风险：中）</a></li></ul></div><footer class="muted"><p>生成于 2026-10-25 21:28（北京时间）</p></footer></body></html>
+<li>交易机器人钱包只放短期要用的小额资金，大额资产留在自己掌控的钱包。</li>
+<li>发件域名正确不代表邮件可信；要求点链接升级固件、验证助记词的邮件一律视为诈骗。</li>
+<li>断开钱包连接不等于撤销链上授权，定期清理不再使用的无限授权和 NFT 全量授权。</li>
+<li>被盗后主动找上门&quot;帮忙追回&quot;的，几乎都是二次诈骗。</li>
+</ul></div><div class="hot"><h3 class="sec" id="archive">往期安全提醒</h3><ul><li><a href="2026-10-26/index.html">2026-10-26（风险：中）</a></li><li><a href="2026-10-25/index.html">2026-10-25（风险：中）</a></li><li><a href="2026-10-24/index.html">2026-10-24（风险：中）</a></li><li><a href="2026-10-23/index.html">2026-10-23（风险：中）</a></li></ul></div><footer class="muted"><p>生成于 2026-10-26 18:27（北京时间）</p></footer></body></html>
