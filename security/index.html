@@ -1,46 +1,47 @@
 <!doctype html><html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>每日安全提醒 2026-10-26</title><link rel="stylesheet" href="../style.css"></head><body>
+<title>每日安全提醒 2026-10-27</title><link rel="stylesheet" href="../style.css"></head><body>
 <header><h1>BITWU 每日安全提醒</h1><nav class="site-nav"><a href="../index.html">📊 研究看板</a><a href="../hot/index.html">🔥 每日热帖榜</a><a href="../security/index.html" class="on">🛡️ 每日安全提醒</a><a href="../archive.html">研究归档</a><a href="../hot/index.html#archive">热帖榜往期</a></nav></header>
 <p class="note">本站只整理公开数据与公开帖子，不含任何个人信息，不构成投资建议。时间均为北京时间；ETF 等数据可能后补修订，以来源为准。</p>
-<div class="hot"><div class="hero"><h2>每日安全提醒 · 2026-10-26</h2><div class="win">行业风险等级：中 ｜ 窗口：2026-10-25 18:19 至 2026-10-26 18:20（北京时间）</div><p>主流交易所未见被盗、暂停提现或储备争议的公开消息；当日重点是 BloomTrading 交易机器人用户被盗约 95 万美元，以及 Passport 硬件钱包开发商官方域名被冒用发送钓鱼邮件。</p><p>只整理公开安全事件；区分传言、当事方声明和独立确认，【不确定】为未核实信息。未发现问题不代表绝对安全。不构成投资建议。</p></div><h3>1. BloomTrading（Solana 交易机器人）用户钱包被盗</h3>
+<div class="hot"><div class="hero"><h2>每日安全提醒 · 2026-10-27</h2><div class="win">行业风险等级：中 ｜ 窗口：2026-10-26 18:20 至 2026-10-27 18:13（北京时间）</div><p>主流交易所未见被盗、暂停提现或储备争议的公开消息；当日重点是 Keystone 真伪验证密钥泄露并销毁约 1.88 万台库存设备、DotSwap V1 被盗约 8.5 BTC，以及 Passport 开发商披露逾 2.3 万次钓鱼邮件尝试。</p><p>只整理公开安全事件；区分传言、当事方声明和独立确认，【不确定】为未核实信息。未发现问题不代表绝对安全。不构成投资建议。</p></div><h3>1. Keystone 硬件钱包：官网漏洞导致真伪验证密钥泄露</h3>
 <ul>
-<li>据链上监测机构 Onchain Lens，一个疑似盗币钱包已收到 49 名受害者的 9,408 枚 SOL，约 95.4 万美元，最大单笔 1,636 SOL（约 16.6 万美元），最终损失可能更高。</li>
-<li>状态：Bloom 称正在调查、其他钱包安全，已临时暂停部分服务。另据 X 新闻汇总，Bloom 将原因归于第三方模块的远程代码执行漏洞并承诺全额赔付【汇总转述，未读到官方原帖】。</li>
-<li>可信度：链上监测 + 当事方声明。</li>
-<li>来源：<a href="https://x.com/wublockchain12/status/2114580094727631127" rel="noopener">吴说</a> · <a href="https://x.com/i/trending/2114561973073347041" rel="noopener">X 新闻汇总</a></li>
+<li>Keystone 最新调查确认，攻击者此前通过官网漏洞获取设备真伪验证密钥（WebAuth Key），可能用于制造能通过官方验证的假冒硬件钱包。</li>
+<li>处置：销毁库存中使用旧密钥的 18,835 台设备，暂停未发货订单配送，新生产启用新密钥；另涉及约 25,964 条含个人信息的购买记录。助记词、私钥与签名功能据称未受影响；10 月 20 日后收到旧密钥设备的用户需联系官方额外验证。</li>
+<li>可信度：当事方声明（经媒体转述）。</li>
+<li>来源：<a href="https://x.com/wublockchain12/status/2114726532921135232" rel="noopener">吴说</a> · <a href="https://x.com/i/trending/2114793854352408974" rel="noopener">X 新闻汇总</a></li>
 </ul>
-<h3>2. Passport 硬件钱包开发商 Foundation 官方域名被冒用发送钓鱼邮件</h3>
+<h3>2. DotSwap（现 On Nexus）V1 被盗约 8.5 BTC</h3>
 <ul>
-<li>初步调查显示源于一个或多个 Cloudflare API 密钥泄露。Foundation 已撤销所有相关密钥并关闭恶意域名，称 Passport 硬件钱包未被入侵，调查仍在进行。</li>
-<li>金额：无数据。可信度：当事方声明。</li>
-<li>来源：<a href="https://x.com/wublockchain12/status/2114589877753057289" rel="noopener">吴说</a></li>
-<li>补充：X 新闻汇总称，2026 年已有多个硬件钱包品牌的官网、电商或邮件等周边系统出问题【汇总说法，未逐一核实】，共同点是周边系统被攻破，而非设备本身。</li>
+<li>当事方称 10 月 25 日攻击者利用旧版 V1 服务器端签名机制，约四小时内盗取流动性池及 V1 账户中约 8.5 枚 BTC（约 68.5 万美元），并涉及大量自动化请求与多种 Rune 资产。</li>
+<li>状态：V1 已下线；托管池内 LP 存款受影响，用户自行托管钱包据称未受波及；资金追踪中。</li>
+<li>可信度：当事方声明 + 媒体转述。</li>
+<li>来源：<a href="https://x.com/wublockchain12/status/2114961029629374944" rel="noopener">吴说</a> · <a href="https://www.kucoin.com/news/flash/bitcoin-dex-on-nexus-hit-by-685k-hack-via-legacy-signature-vulnerability" rel="noopener">KuCoin 快讯</a></li>
 </ul>
-<h3>3. 一则&quot;某主流 DEX 聚合器被利用&quot;的单方指控</h3>
+<h3>3. Passport 开发商 Foundation：逾 2.3 万次钓鱼邮件尝试</h3>
 <ul>
-<li>10-26 下午，一名低粉丝 X 用户称其链上资产经某主流交易所旗下 DEX 聚合器被转走，并在多个官方账号下刷屏。其提供的交易链接无法在以太坊主网查到；窗口内未见安全机构或平台官方确认。</li>
-<li>可信度：单方指控，未核实【不确定】。可能是个人授权或私钥问题，也可能是真实漏洞，目前无法判断。</li>
-<li>来源：<a href="https://x.com/NKenV37/status/2114617665574916249" rel="noopener">原帖</a></li>
+<li>Foundation 调查更新称已发现超过 2.3 万次钓鱼邮件发送尝试（经 Mailgun 约 19,057 封、经 Google Workspace 约 1,503 封），实际受影响用户数量仍在调查。此前归因于 Cloudflare API 密钥泄露，并称硬件本身未被入侵。</li>
+<li>金额：无数据。可信度：当事方声明（经媒体转述）。</li>
+<li>来源：<a href="https://x.com/wublockchain12/status/2114874785943687176" rel="noopener">吴说</a></li>
 </ul>
 <h3>其他值得留意</h3>
 <ul>
-<li>Initia 后续：Upbit 10-26 起将 INIT 列为交易警示资产，Bithumb 同日列为警示并暂停 INIT 充提，理由是安全事件原因未查明或未解决。<a href="https://x.com/wublockchain12/status/2114589280379302187" rel="noopener">吴说</a></li>
-<li>CoinDCX 收尾：据 X 新闻汇总，CoinDCX 已确认 40 个旧 TRON 充值钱包损失 15.99M USDT，原因是自动归集失效，用户充值堆积在 2025 年 7 月被黑的旧钱包中；平台自担损失并已为用户入账，Tether 冻结约 13.8%【汇总转述，官方原帖未直接核对】。<a href="https://x.com/i/trending/2114416610823831643" rel="noopener">X 新闻汇总</a></li>
-<li>&quot;解封账户、追回被盗资产&quot;类广告仍在流行，属典型二次诈骗。</li>
-<li>非加密但相关：Tailscale 被披露 11 个未修补漏洞，官方正在调查；PHP2Shell 漏洞已被实战攻破，补丁版本为 PHP 8.2.35 / 8.3.36 / 8.4.27 / 8.5.12。<a href="https://x.com/i/trending/2114492685226500116" rel="noopener">Tailscale</a> · <a href="https://x.com/i/trending/2114370981464793383" rel="noopener">PHP</a></li>
-<li>稳定币：CoinGecko 单点报价 USDT 0.9992、USDC 0.9997、FDUSD 0.9970、USDe 0.9993、DAI 1.0000，未见脱锚报道。</li>
+<li>CoinDCX 警告用户正遭遇冒充官方通知与邮件的钓鱼，诱导点击外部链接、连接钱包或输入账户信息；官方强调不会索要私钥、助记词或一次性验证码。<a href="https://x.com/wublockchain12/status/2114923197556744217" rel="noopener">吴说</a></li>
+<li>BloomTrading 昨日报约 95 万美元被盗后，X 新闻汇总称已全额退款【汇总转述，未核对官方原帖】。<a href="https://x.com/i/trending/2114561973073347041" rel="noopener">X 新闻汇总</a></li>
+<li>以太坊即将推出的 Glamsterdam 升级中一处可能导致质押存款被恶意转移的漏洞已在代码层修复，升级尚未上线主网，尚无资金损失报道。<a href="https://x.com/wublockchain12/status/2114980332789510400" rel="noopener">吴说</a></li>
+<li>OneKey 宣布主动删除电商历史订单中的可控个人数据，并计划缩短保留周期——属防护加强，不是被攻击公告。<a href="https://x.com/wublockchain12/status/2115008904040190184" rel="noopener">吴说</a> · <a href="https://x.com/PANewsCN/status/2114971451581407510" rel="noopener">PANews</a></li>
+<li>一则「某主流 DEX 聚合器被利用」的单方指控窗口内无新进展，仍未见安全机构或平台官方确认【不确定】。</li>
+<li>稳定币：CoinGecko 单点报价 USDT 约 0.9988、USDC 约 0.9994、FDUSD 约 0.9968、USDe 约 0.9990、DAI 1.0000，未见脱锚报道。</li>
 </ul>
 <h3>可能受影响的人群</h3>
 <ul>
-<li>使用 BloomTrading 机器人、由其托管或代为签名的 Solana 交易者。</li>
-<li>Foundation / Passport 的客户和邮件订阅者。</li>
-<li>INIT 持有人（部分韩国交易所充提受限）。</li>
-<li>在 DEX 聚合器上留有长期无限授权的用户。</li>
+<li>Keystone 购买者与待发货订单用户，以及从非官方渠道采购硬件钱包的人。</li>
+<li>DotSwap V1 / On Nexus 旧版流动性提供者。</li>
+<li>Foundation / Passport 的邮件订阅者与客户。</li>
+<li>印度等地交易所用户（冒充官方的二次钓鱼）。</li>
 </ul>
 <h3>通用防护建议</h3>
 <ul>
-<li>交易机器人钱包只放短期要用的小额资金，大额资产留在自己掌控的钱包。</li>
-<li>发件域名正确不代表邮件可信；要求点链接升级固件、验证助记词的邮件一律视为诈骗。</li>
-<li>断开钱包连接不等于撤销链上授权，定期清理不再使用的无限授权和 NFT 全量授权。</li>
-<li>被盗后主动找上门&quot;帮忙追回&quot;的，几乎都是二次诈骗。</li>
-</ul></div><div class="hot"><h3 class="sec" id="archive">往期安全提醒</h3><ul><li><a href="2026-10-26/index.html">2026-10-26（风险：中）</a></li><li><a href="2026-10-25/index.html">2026-10-25（风险：中）</a></li><li><a href="2026-10-24/index.html">2026-10-24（风险：中）</a></li><li><a href="2026-10-23/index.html">2026-10-23（风险：中）</a></li></ul></div><footer class="muted"><p>生成于 2026-10-26 20:00（北京时间）</p></footer></body></html>
+<li>硬件钱包只从官方或可信渠道购买；遇到「召回、升级固件、验证助记词」类邮件或链接，一律先当诈骗，再去官网自行核对。</li>
+<li>协议升级或迁移后，尽快退出已宣布弃用的旧池子与旧合约，不要长期把流动性留在无人维护的版本上。</li>
+<li>安全事件之后往往跟第二波钓鱼：不要向任何「客服」提供私钥、助记词或验证码，也不要通过邮件链接连接钱包。</li>
+<li>断开钱包连接不等于撤销链上授权，定期清理不再使用的无限授权。</li>
+</ul></div><div class="hot"><h3 class="sec" id="archive">往期安全提醒</h3><ul><li><a href="2026-10-27/index.html">2026-10-27（风险：中）</a></li><li><a href="2026-10-26/index.html">2026-10-26（风险：中）</a></li><li><a href="2026-10-25/index.html">2026-10-25（风险：中）</a></li><li><a href="2026-10-24/index.html">2026-10-24（风险：中）</a></li><li><a href="2026-10-23/index.html">2026-10-23（风险：中）</a></li></ul></div><footer class="muted"><p>生成于 2026-10-27 18:21（北京时间）</p></footer></body></html>
