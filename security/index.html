@@ -1,48 +1,49 @@
 <!doctype html><html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>每日安全提醒 2026-10-28</title><link rel="stylesheet" href="../style.css"></head><body>
+<title>每日安全提醒 2026-10-29</title><link rel="stylesheet" href="../style.css"></head><body>
 <header><h1>BITWU 每日安全提醒</h1><nav class="site-nav"><a href="../index.html">📊 研究看板</a><a href="../hot/index.html">🔥 每日热帖榜</a><a href="../security/index.html" class="on">🛡️ 每日安全提醒</a><a href="../archive.html">研究归档</a><a href="../hot/index.html#archive">热帖榜往期</a></nav></header>
 <p class="note">本站只整理公开数据与公开帖子，不含任何个人信息，不构成投资建议。时间均为北京时间；ETF 等数据可能后补修订，以来源为准。</p>
-<div class="hot"><div class="hero"><h2>每日安全提醒 · 2026-10-28</h2><div class="win">行业风险等级：中 ｜ 窗口：2026-10-27 18:13 至 2026-10-28 18:15（北京时间）</div><p>主流交易所未见被盗、暂停提现或储备争议的公开消息；当日重点是第三方分析商安全事件波及部分交易所客户联系信息、韩国交易所内部群件遭未授权访问，以及 Avalanche 上 TranchePool 约 101 万美元 USDC 被盗。</p><p>只整理公开安全事件；区分传言、当事方声明和独立确认，【不确定】为未核实信息。未发现问题不代表绝对安全。不构成投资建议。</p></div><h3>1. 大型交易所客户联系信息受第三方分析商安全事件波及</h3>
+<div class="hot"><div class="hero"><h2>每日安全提醒 · 2026-10-29</h2><div class="win">行业风险等级：中 ｜ 窗口：2026-10-28 18:15 至 2026-10-29 18:10（北京时间）</div><p>主流交易所未见被盗、暂停提现或储备争议的公开消息；当日重点是 zkLink Nova 跨链桥约 78 万美元被盗、韩国交易所坐实数百名客户敏感个人资料泄露，以及新加坡警方确认零售渠道硬件钱包遭恶意植入。</p><p>只整理公开安全事件；区分传言、当事方声明和独立确认，【不确定】为未核实信息。未发现问题不代表绝对安全。不构成投资建议。</p></div><h3>1. zkLink Nova 跨链桥约 78.3–78.6 万美元被盗</h3>
 <ul>
-<li>安全从业者与媒体称，某大型交易所客户联系信息外泄；该交易所随后澄清：自身系统未遭入侵，事件源于数据分析服务商 Amplitude 的安全事件，波及一小部分客户的联系信息；未发现未经授权访问其系统的证据，客户资金未受影响，将通知受影响用户与监管机构。</li>
-<li>同日有业内人士将多起数据泄露并列，提醒防范钓鱼、SIM 卡劫持与社会工程。</li>
-<li>金额：无资金被盗公开数字（联系信息）。可信度：当事方声明 + 媒体/安全从业者转述。</li>
-<li>来源：<a href="https://x.com/im23pds/status/2115266768688361483" rel="noopener">im23pds</a> · <a href="https://x.com/im23pds/status/2115280563833819449" rel="noopener">im23pds 跟进</a> · <a href="https://x.com/OdailyChina/status/2115283948381331638" rel="noopener">Odaily</a> · <a href="https://x.com/cz_binance/status/2115304943934672928" rel="noopener">CZ</a> · <a href="https://x.com/i/trending/2115262479601484050" rel="noopener">X 新闻汇总</a></li>
+<li>安全机构 Blockaid、慢雾报告：攻击者利用公开可调用的中继路径，向以太坊侧注入伪造批次状态根，随后从 Nova 在以太坊上的托管合约提取 ETH 及多种 ERC-20；慢雾估损约 78.31 万美元（约 783.1k），Blockaid 报约 78.6 万美元。</li>
+<li>根因摘要（慢雾）：仲裁合约 claimMessage 未清除临时消息哈希，且未要求每次调用都有新的已认证回调，导致有效哈希被复用并伪装成合法网关同步假根后提款。</li>
+<li>项目方确认以太坊与 Optimism 上相关合约遭利用，称正在紧急处置，并呼吁停止利用、返还资金，愿提供 20% 白帽赏金。【最终总损失与是否已完全止损：不确定】</li>
+<li>可信度：安全机构链上分析 + 当事方确认。</li>
+<li>来源：<a href="https://x.com/SlowMist_Team/status/2115635114638250409" rel="noopener">SlowMist</a> · <a href="https://x.com/blockaid_/status/2115630787169050800" rel="noopener">Blockaid</a> · <a href="https://x.com/zkLink_Official/status/2115731883313254565" rel="noopener">zkLink 官方</a> · <a href="https://x.com/wublockchain12/status/2115633300077518881" rel="noopener">吴说</a> · <a href="https://www.cryptotimes.io/2026/10/29/zklink-nova-bridge-exploited-for-786k-as-forged-batch-root-drains-ethereum-escrow/" rel="noopener">CryptoTimes</a></li>
 </ul>
-<h3>2. 韩国第二大加密交易所内部移动群件遭未授权访问</h3>
+<h3>2. 韩国第二大加密交易所坐实数百名客户敏感资料泄露</h3>
 <ul>
-<li>据韩联社等报道，Bithumb 确认外部未授权方访问其内部移动群件，导致个人信息泄露；10 月 27 日发现；客户信息是否外泄仍在调查。当事方称该系统与交易平台隔离，客户虚拟资产无法经此路径访问。</li>
-<li>同期韩国多家金融机构亦报告网络入侵；其中大信证券披露约 38,490 名客户个人与信用信息泄露。金融监督机构已介入现场检查；警方启动立案前调查。</li>
-<li>金额：无资金被盗公开数字。可信度：当事方确认 + 媒体报道。</li>
-<li>来源：<a href="https://x.com/WuBlockchain/status/2115256600370024657" rel="noopener">WuBlockchain</a> · <a href="https://x.com/wublockchain12/status/2115253532811255957" rel="noopener">吴说</a> · <a href="https://x.com/wublockchain12/status/2115384509021687960" rel="noopener">吴说跟进</a> · <a href="https://www.coindesk.com/tech/2026/10/28/bithumb-hacked-through-employee-system-as-south-korean-financial-firms-face-cyberattacks" rel="noopener">CoinDesk</a></li>
+<li>当事方详细通报：内部移动协作办公系统于 10 月 27 日上午遭外部未授权访问约 1 小时；共涉及 6,444 名客户资料被带出，其中 5,600 条处于加密不可读状态，<b>844 名客户确认泄露</b>（含姓名、手机、邮箱、身份证件号码、银行账号、身份证件复印件等），另有 715 名内部及合作方人员资料泄露。</li>
+<li>当事方称该系统与交易及客户资产库隔离，未见交易服务或资产库直接被侵；已向监管与网安机构申报，并承诺对确认经济损失全额赔偿；提醒警惕冒充员工索要验证码或远程控制。</li>
+<li>金额：无资金被盗公开数字。可信度：当事方详细声明 + 媒体报道。</li>
+<li>来源：<a href="https://x.com/WuBlockchain/status/2115740922097156582" rel="noopener">WuBlockchain</a> · <a href="https://x.com/wublockchain12/status/2115733358546489549" rel="noopener">吴说</a> · <a href="https://en.yna.co.kr/view/AEN20261029012000320" rel="noopener">Yonhap</a> · <a href="https://biz.heraldcorp.com/article/10919683" rel="noopener">Herald</a> · <a href="https://feed.bithumb.com/notice/1655458" rel="noopener">交易所公告</a></li>
 </ul>
-<h3>3. Avalanche 上 TranchePool 约 101.3 万美元 USDC 被盗</h3>
+<h3>3. 新加坡警方确认零售渠道硬件钱包遭恶意硬件植入</h3>
 <ul>
-<li>慢雾等安全机构报告，与 Valinor Digital、Oatfi、Fence Finance 相关的 TranchePool 因结算逻辑在 UTC 日切时将计划本金还款误认为已收到，虚增可提取额度，攻击者二次提取约 1.013M USDC。</li>
-<li>状态：已发生；公开修复与追赃细节有限。可信度：安全机构链上分析。</li>
-<li>来源：<a href="https://x.com/SlowMist_Team/status/2115281126516490514" rel="noopener">SlowMist</a> · <a href="https://x.com/wublockchain12/status/2115253392847335931" rel="noopener">吴说</a> · <a href="https://x.com/CertiKAlert/status/2115289650025923015" rel="noopener">CertiKAlert</a></li>
+<li>新加坡警方 10 月 28 日公告：自 9 月 10 日起至少接获两起遭篡改硬件钱包案件，损失合计约 350 万新元（约 270 万美元）；初步调查称部分经本地零售商购买的设备含恶意硬件组件，可窃取助记词或私钥。</li>
+<li>品牌方称正在审查相关案件；警方调查进行中。该通报与近期硬件钱包供应链植入事件叙事一致，属于本地执法层面的确认。</li>
+<li>可信度：执法机关公告 + 媒体转述。</li>
+<li>来源：<a href="https://x.com/WuBlockchain/status/2115679105505231344" rel="noopener">WuBlockchain</a> · <a href="https://x.com/wublockchain12/status/2115665288419242217" rel="noopener">吴说</a> · <a href="https://www.police.gov.sg/Media-Hub/News/2026/10/20261028_police_advisory_on_tampered_cryptocurrency_hardware_wallets" rel="noopener">新加坡警方</a></li>
 </ul>
 <h3>其他值得留意</h3>
 <ul>
-<li>预测市场平台 Predict.fun：官方称第三方托管的 API 文档站可能被入侵，少量用户钱包出现未授权转出，合计约 40 万 USDT；文档站已下线，官方称将全额赔偿直接损失。链上监测显示转出多由受害钱包自身密钥签名。【赔付是否全部到账：不确定】<a href="https://x.com/predictdotfun/status/2115089547528950108" rel="noopener">官方</a> · <a href="https://x.com/Bitquery_io/status/2115126436155846672" rel="noopener">Bitquery</a></li>
-<li>假冒钱包「Card」类钓鱼仍在流传，诱导连接钱包；个案金额报道约数百至一千 USDT 量级【新闻汇总，热度低】。</li>
-<li>硬件钱包品牌 NGRAVE 发布高级别网络威胁预警，提醒警惕冒充官方的短信、邮件与假客服（当事方声明，无资金损失公开数字）。<a href="https://x.com/wublockchain12/status/2115236647197618541" rel="noopener">吴说</a></li>
-<li>客服系统 Udesk 相关脚本遭恶意代码注入、可调换页面充值信息的威胁情报仍值得关注。<a href="https://x.com/SlowMist_Team/status/2115033345675678012" rel="noopener">SlowMist</a></li>
-<li>硬件钱包 Keystone 真伪验证密钥泄露、Passport 开发商钓鱼邮件规模更新、部分比特币 DEX 旧版被盗等多为此前已报事件，窗口内无重大新资金损失进展则不重复展开。</li>
-<li>稳定币：CoinGecko 单点报价 USDT 约 0.9988、USDC 约 0.9994、FDUSD 约 0.9976、USDe 约 0.9992、DAI 约 0.9999，未见脱锚报道。</li>
+<li>已知硬件钱包供应链盗窃资金继续流转：链上监测显示相关盗取资金向混币服务转入约 2,000.2 ETH（资金追踪，非新破口）。<a href="https://x.com/MistTrack_io/status/2115728796850798940" rel="noopener">MistTrack</a></li>
+<li>大型交易所客户联系信息受第三方分析商安全事件波及一事仍在讨论期，当事方此前强调自身系统未遭入侵、客户资金未受影响；重点仍是防钓鱼与 SIM 卡劫持。</li>
+<li>假冒钱包「Card」类钓鱼、部分预测市场第三方文档站入侵、小额 DeFi 被盗等多为此前已报事件，窗口内无更大新资金损失进展则不重复展开。</li>
+<li>韩国另有小型交易平台据报道因热钱包异常提现暂停服务（约 1 亿韩元量级）【媒体转述，非主流大所】。</li>
+<li>稳定币：CoinGecko 单点报价 USDT 约 0.998984、USDC 约 0.999464、FDUSD 约 0.997189、USDe 约 0.999355、DAI 约 0.999828，未见脱锚报道。</li>
 </ul>
 <h3>可能受影响的人群</h3>
 <ul>
-<li>大型交易所用户及使用同一类第三方分析服务的项目用户（联系信息外泄后的钓鱼与 SIM 劫持风险）。</li>
-<li>韩国相关交易所与券商客户（个资范围部分仍在调查）。</li>
-<li>相关 TranchePool / 分级金库的存款或流动性提供方。</li>
-<li>曾在第三方托管文档站导出密钥或保持登录会话的 API 交易用户。</li>
+<li>相关跨链桥的存款与跨链用户（谨防冒充项目的退款、白名单链接）。</li>
+<li>韩国相关交易所确认资料泄露的客户与员工（冒充客服、身份盗用、SIM 劫持）。</li>
+<li>经零售货架或非官方渠道购买硬件钱包的用户。</li>
+<li>使用短信二次验证、曾在多个平台填写完整身份资料的交易用户（数据泄露后的定向诈骗对象）。</li>
 </ul>
 <h3>通用防护建议</h3>
 <ul>
-<li>数据泄露之后往往跟第二波钓鱼：不要轻信「因泄露需验证、紧急提币、客服协助」类邮件或短信；只从官方 App 或自行输入的域名进入。</li>
-<li>减少在交易平台填写的可选个人资料；尽量使用独立邮箱别名与非短信二次验证；能开提现白名单、防钓鱼码、硬件安全密钥的尽量开启。</li>
-<li>客服挂件与充值页若提示收款信息不符，先停手，改走官方渠道核对，勿按弹窗或聊天里的新收款信息打款。</li>
+<li>数据泄露之后往往跟第二波钓鱼：不要轻信「因泄露需验证、紧急提币、客服协助」类电话、短信或邮件；只从官方 App 或自行输入的域名进入。</li>
+<li>跨链桥或项目方若发布被盗公告，默认不点任何「连接钱包领补偿」链接；以官方域名与已关注账号交叉核实。</li>
+<li>硬件钱包只从品牌官方或长期可信渠道购买；遇到「召回、升级固件、验证助记词」类链接，一律先当诈骗。</li>
+<li>减少可选个人资料填写；尽量使用非短信二次验证、提现白名单与防钓鱼码。</li>
 <li>断开钱包连接不等于撤销链上授权，定期清理不再使用的无限授权。</li>
-<li>硬件钱包只从官方或可信渠道购买；遇到「召回、升级固件、验证助记词」类链接，一律先当诈骗。</li>
-</ul></div><div class="hot"><h3 class="sec" id="archive">往期安全提醒</h3><ul><li><a href="2026-10-28/index.html">2026-10-28（风险：中）</a></li><li><a href="2026-10-27/index.html">2026-10-27（风险：中）</a></li><li><a href="2026-10-26/index.html">2026-10-26（风险：中）</a></li><li><a href="2026-10-25/index.html">2026-10-25（风险：中）</a></li><li><a href="2026-10-24/index.html">2026-10-24（风险：中）</a></li><li><a href="2026-10-23/index.html">2026-10-23（风险：中）</a></li></ul></div><footer class="muted"><p>生成于 2026-10-28 19:58（北京时间）</p></footer></body></html>
+</ul></div><div class="hot"><h3 class="sec" id="archive">往期安全提醒</h3><ul><li><a href="2026-10-29/index.html">2026-10-29（风险：中）</a></li><li><a href="2026-10-28/index.html">2026-10-28（风险：中）</a></li><li><a href="2026-10-27/index.html">2026-10-27（风险：中）</a></li><li><a href="2026-10-26/index.html">2026-10-26（风险：中）</a></li><li><a href="2026-10-25/index.html">2026-10-25（风险：中）</a></li><li><a href="2026-10-24/index.html">2026-10-24（风险：中）</a></li><li><a href="2026-10-23/index.html">2026-10-23（风险：中）</a></li></ul></div><footer class="muted"><p>生成于 2026-10-29 18:14（北京时间）</p></footer></body></html>
